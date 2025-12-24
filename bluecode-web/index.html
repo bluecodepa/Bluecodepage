@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blue Code — Soluciones Tecnológicas</title>
+  <meta name="description" content="Blue Code: consultorías, optimización de procesos y digitalización empresarial." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="header__brand" href="#inicio" aria-label="Ir a inicio">
+        <img src="assets/bluecode/logos/logo-horizontal.png" alt="Blue Code" class="header__logo" />
+      </a>
+
+      <nav class="nav nav--desktop" aria-label="Navegación principal">
+        <a class="nav__link" href="#inicio">Inicio</a>
+        <a class="nav__link" href="#servicios">Servicios</a>
+        <a class="nav__link" href="#planes">Planes</a>
+        <a class="nav__link" href="#sobre-nosotros">Sobre Nosotros</a>
+        <a class="nav__link" href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--primary header__cta" href="#servicios">Descubre nuestras soluciones</a>
+
+        <button class="icon-btn header__burger" type="button"
+                aria-label="Abrir menú"
+                aria-controls="mobileMenu"
+                aria-expanded="false">
+          <span class="icon-btn__bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__overlay" data-close-menu></div>
+
+    <aside class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Menú">
+      <div class="mobile-menu__top">
+        <img src="assets/bluecode/logos/logo-horizontal.png" alt="Blue Code" class="mobile-menu__logo" />
+        <button class="icon-btn" type="button" aria-label="Cerrar menú" data-close-menu>✕</button>
+      </div>
+
+      <nav class="mobile-menu__nav" aria-label="Navegación móvil">
+        <a class="mobile-menu__link" href="#inicio">Inicio</a>
+        <a class="mobile-menu__link" href="#servicios">Servicios</a>
+        <a class="mobile-menu__link" href="#planes">Planes</a>
+        <a class="mobile-menu__link" href="#sobre-nosotros">Sobre Nosotros</a>
+        <a class="mobile-menu__link" href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="btn btn--primary mobile-menu__cta" href="#contacto">Contáctanos</a>
+    </aside>
+  </div>
+
+  <main>
+    <section class="section section--primary" id="inicio">
+      <div class="container hero">
+        <div class="hero__content">
+          <h1 class="h1">Somos el azul que le faltaba a tu paleta de colores</h1>
+          <p class="hero__sub">We are the blue your palette was missing</p>
+
+          <div class="hero__buttons">
+            <a class="btn btn--glow" href="#servicios">Descubre nuestras soluciones</a>
+            <a class="btn btn--secondary" href="#contacto">Hablemos</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <img src="assets/bluecode/illustrations/hero.png" alt="Ilustración Blue Code" class="hero__img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicios">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="h2">Servicios</h2>
+          <p class="section__lead">Soluciones tecnológicas para que tu empresa crezca sin fricción.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card card--service">
+            <img class="card__img" src="assets/bluecode/illustrations/service-consulting.png" alt="Consultorías" />
+            <h3 class="h3">Consultorías Tecnológicas</h3>
+            <p class="body">Diagnóstico, estrategia y roadmap para escalar con tecnología.</p>
+          </article>
+
+          <article class="card card--service">
+            <img class="card__img" src="assets/bluecode/illustrations/service-optimization.png" alt="Optimización de procesos" />
+            <h3 class="h3">Optimiza tus Procesos</h3>
+            <p class="body">Digitaliza y automatiza flujos internos para ahorrar tiempo y costos.</p>
+          </article>
+
+          <article class="card card--service">
+            <img class="card__img" src="assets/bluecode/illustrations/service-digitalization.png" alt="Digitalización empresarial" />
+            <h3 class="h3">Digitalización Empresarial</h3>
+            <p class="body">Implementación de herramientas y migración a entornos modernos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="valores">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="h2">¿Por qué elegir Blue Code?</h2>
+          <p class="section__lead">No somos una empresa tech más, somos tu socio estratégico.</p>
+        </header>
+
+        <div class="grid grid--4">
+          <article class="card card--value">
+            <img class="card__img card__img--sm" src="assets/bluecode/illustrations/value-security.png" alt="Seguridad" />
+            <h3 class="h3 h3--sm">Seguridad</h3>
+            <p class="caption">Protección de datos y sistemas críticos.</p>
+          </article>
+
+          <article class="card card--value">
+            <img class="card__img card__img--sm" src="assets/bluecode/illustrations/value-scalability.png" alt="Escalabilidad" />
+            <h3 class="h3 h3--sm">Escalabilidad</h3>
+            <p class="caption">Arquitecturas que crecen con tu negocio.</p>
+          </article>
+
+          <article class="card card--value">
+            <img class="card__img card__img--sm" src="assets/bluecode/illustrations/value-support.png" alt="Soporte confiable" />
+            <h3 class="h3 h3--sm">Soporte Confiable</h3>
+            <p class="caption">Acompañamiento continuo, sin sorpresas.</p>
+          </article>
+
+          <article class="card card--value">
+            <img class="card__img card__img--sm" src="assets/bluecode/illustrations/value-transparency.png" alt="Transparencia" />
+            <h3 class="h3 h3--sm">Transparencia</h3>
+            <p class="caption">Comunicación clara, métricas y reportes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="planes">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="h2">Planes</h2>
+          <p class="section__lead">Flexibilidad y claridad para crecer a tu ritmo.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card card--plan">
+            <img class="card__img" src="assets/bluecode/illustrations/plan-ondemand.png" alt="On-Demand IT" />
+            <h3 class="h3">On-Demand IT</h3>
+            <p class="body">Soporte y soluciones puntuales cuando lo necesites.</p>
+            <a class="btn btn--primary btn--full" href="#contacto">Elegir</a>
+          </article>
+
+          <article class="card card--plan card--featured">
+            <div class="badge">Recomendado</div>
+            <img class="card__img" src="assets/bluecode/illustrations/plan-outsourcing.png" alt="Full Outsourcing" />
+            <h3 class="h3">Full Outsourcing</h3>
+            <p class="body">Externalización completa de tu área IT con soporte constante.</p>
+            <a class="btn btn--primary btn--full" href="#contacto">Elegir</a>
+          </article>
+
+          <article class="card card--plan">
+            <img class="card__img" src="assets/bluecode/illustrations/plan-custom.png" alt="Custom Development" />
+            <h3 class="h3">Custom Development</h3>
+            <p class="body">Desarrollo de software y soluciones a medida para tu negocio.</p>
+            <a class="btn btn--primary btn--full" href="#contacto">Elegir</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre-nosotros">
+      <div class="container split">
+        <div class="split__text">
+          <h2 class="h2">Somos la estructura detrás de la evolución de las empresas.</h2>
+          <p class="body">
+            Integramos consultoría, optimización y digitalización para simplificar lo complejo
+            y acelerar resultados. Tecnología confiable, procesos claros y acompañamiento real.
+          </p>
+        </div>
+        <div class="split__visual">
+          <img src="assets/bluecode/illustrations/about.png" alt="Equipo Blue Code" class="split__img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--primary">
+      <div class="container cta">
+        <div class="cta__text">
+          <h2 class="h2 h2--white">¿Listo para transformar tu tecnología?</h2>
+          <a class="btn btn--white" href="#contacto">Contáctanos</a>
+        </div>
+        <div class="cta__visual">
+          <img src="assets/bluecode/illustrations/cta.png" alt="CTA Blue Code" class="cta__img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container contact">
+        <header class="section__header">
+          <h2 class="h2">Contacto</h2>
+          <p class="section__lead">Cuéntanos qué necesitas y te respondemos rápido.</p>
+        </header>
+
+        <div class="contact__grid">
+          <form class="form" novalidate>
+            <label class="field">
+              <span class="field__label">Nombre</span>
+              <input class="input" type="text" name="nombre" autocomplete="name" required />
+            </label>
+
+            <label class="field">
+              <span class="field__label">Email</span>
+              <input class="input" type="email" name="email" autocomplete="email" required />
+            </label>
+
+            <label class="field">
+              <span class="field__label">Empresa</span>
+              <input class="input" type="text" name="empresa" autocomplete="organization" />
+            </label>
+
+            <label class="field">
+              <span class="field__label">Mensaje</span>
+              <textarea class="textarea" name="mensaje" rows="5" required></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="submit">Enviar</button>
+            <p class="caption form__note">Al enviar aceptas que te contactemos con la información proporcionada.</p>
+          </form>
+
+          <div class="contact__visual">
+            <img src="assets/bluecode/illustrations/contact.png" alt="Contacto Blue Code" class="contact__img" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img src="assets/bluecode/logos/logo-blanco.png" alt="Blue Code" class="footer__logo" />
+
+      <nav class="footer__nav" aria-label="Navegación footer">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">@blue_.code</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
