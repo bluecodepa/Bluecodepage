@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-label="Ilustración CTA Blue Code">
+  <defs>
+    <style>
+      .s{stroke:#0B1220;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+      .soft{stroke:#0B1220;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;opacity:.20}
+    </style>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#0B1220" flood-opacity=".14"/>
+    </filter>
+  </defs>
+
+  <!-- Card -->
+  <rect x="80" y="90" width="740" height="470" rx="56" fill="#F3F6FA" class="s" filter="url(#shadow)"/>
+
+  <!-- Support bubble -->
+  <circle cx="700" cy="200" r="96" fill="#FFFFFF" class="s"/>
+  <path d="M660 205v-18a52 52 0 0 1 104 0v18" fill="none" class="s"/>
+  <path d="M670 220c0 26 18 46 40 46" fill="none" class="soft"/>
+  <path d="M754 220c0 26-18 46-40 46" fill="none" class="soft"/>
+  <circle cx="624" cy="230" r="14" fill="#0098FF"/>
+  <circle cx="792" cy="230" r="14" fill="#0098FF"/>
+
+  <!-- People -->
+  <g>
+    <circle cx="250" cy="270" r="56" fill="#FFFFFF" class="s"/>
+    <path d="M170 445c44-70 126-70 160 0v70H170z" fill="#FFFFFF" class="s"/>
+    <path d="M190 374h120" class="soft"/>
+  </g>
+
+  <g>
+    <circle cx="470" cy="270" r="56" fill="#FFFFFF" class="s"/>
+    <path d="M390 445c44-70 126-70 160 0v70H390z" fill="#FFFFFF" class="s"/>
+    <rect x="448" y="410" width="44" height="16" rx="8" fill="#0098FF" opacity=".92"/>
+  </g>
+
+  <!-- Desk + laptop -->
+  <rect x="260" y="380" width="380" height="170" rx="26" fill="#FFFFFF" class="s"/>
+  <rect x="300" y="415" width="300" height="18" rx="9" fill="#0B1220" opacity=".10"/>
+  <circle cx="450" cy="468" r="18" fill="#0098FF" opacity=".90"/>
+
+  <!-- Memphis accents -->
+  <path d="M130 210c40 0 70 30 70 70" fill="none" class="soft"/>
+  <circle cx="150" cy="510" r="16" fill="#0098FF"/>
+  <circle cx="180" cy="510" r="16" fill="#0098FF" opacity=".35"/>
+</svg>
+
