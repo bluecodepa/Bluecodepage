@@ -2,4 +2,8 @@
 contex/
 **/contex/
 
+# Artefactos de deploy (Namecheap)
+dist/
+bluecode-namecheap.zip
+
 
