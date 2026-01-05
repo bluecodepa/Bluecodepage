@@ -208,6 +208,7 @@ img{ max-width:100%; height:auto; display:block; }
   gap:40px;
   align-items:center;
 }
+.hero > *{ min-width:0; } /* evita overflow/cortes en grid en pantallas pequeñas */
 .hero__sub{
   font-size:18px;
   margin:0 0 24px;
@@ -302,6 +303,7 @@ img{ max-width:100%; height:auto; display:block; }
   gap:40px;
   align-items:center;
 }
+.split > *{ min-width:0; }
 .split__img{ max-width:520px; margin-left:auto; }
 
 /* CTA */
@@ -311,6 +313,7 @@ img{ max-width:100%; height:auto; display:block; }
   gap:32px;
   align-items:center;
 }
+.cta > *{ min-width:0; }
 .section--cta{
   position:relative;
   overflow:hidden;
@@ -403,6 +406,7 @@ img{ max-width:100%; height:auto; display:block; }
   gap:32px;
   align-items:start;
 }
+.contact__grid > *{ min-width:0; }
 .contact__img{
   width:100%;
   max-width:520px;
@@ -621,6 +625,7 @@ img{ max-width:100%; height:auto; display:block; }
   .hero__buttons{ justify-content:flex-start; }
 
   /* En layouts de 1 columna, centrar visuales para evitar “pegado” a un lado */
+  .hero__visual,
   .split__visual,
   .cta__visual{
     display:flex;
@@ -693,6 +698,13 @@ img{ max-width:100%; height:auto; display:block; }
   .cta__img,
   .contact__img{
     margin-inline:auto;
+  }
+
+  /* Ilustraciones: limita tamaño para que el texto/CTA no se sienta “cortado” */
+  .hero__img,
+  .split__img,
+  .cta__img{
+    max-width:min(360px, 100%);
   }
 
   /* Evitar que el logo del footer fuerce ancho */
