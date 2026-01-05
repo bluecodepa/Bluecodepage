@@ -31,6 +31,7 @@ body{
   font-family:"Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color:var(--black);
   background:var(--white);
+  overflow-x:hidden; /* evita scroll horizontal por elementos anchos en móvil */
 }
 img{ max-width:100%; height:auto; display:block; }
 
@@ -630,7 +631,11 @@ img{ max-width:100%; height:auto; display:block; }
   .h3{ font-size:24px; }
 
   .header__logo{ height:40px; }
-  .btn{ height:46px; font-size:17px; }
+  .btn{
+    height:46px;
+    font-size:17px;
+    max-width:100%;
+  }
   .btn--full{ height:48px; }
   .card{ padding:20px; }
   .card__img{ height:128px; padding:10px; }
@@ -652,4 +657,38 @@ img{ max-width:100%; height:auto; display:block; }
 
   .modal__panel{ padding:18px; }
   .modal__title{ font-size:22px; }
+}
+
+@media (max-width: 480px){
+  .section{ padding-block:56px; }
+  .h1{ font-size:34px; line-height:1.15; }
+  .h2{ font-size:26px; }
+  .h3{ font-size:22px; }
+  .body{ font-size:16px; }
+
+  /* Botones largos: mejor apilados */
+  .hero__buttons,
+  .cta__actions{
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .hero__buttons .btn,
+  .cta__actions .btn{
+    width:100%;
+  }
+
+  /* Centrar visuales en layouts de 1 columna */
+  .hero__img,
+  .split__img,
+  .cta__img,
+  .contact__img{
+    margin-inline:auto;
+  }
+
+  /* Evitar que el logo del footer fuerce ancho */
+  .footer__logo{
+    height:auto;
+    width:min(240px, 72vw);
+    max-width:100%;
+  }
 }
