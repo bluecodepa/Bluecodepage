@@ -4,17 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Blue Code</title>
-    <meta http-equiv="refresh" content="0; url=bluecode-web/" />
-    <link rel="canonical" href="bluecode-web/" />
     <script>
       // Redirección para GitHub Pages (repo con sitio dentro de /bluecode-web)
-      window.location.replace("bluecode-web/");
+      (function () {
+        var base = window.location.pathname;
+        if (!base.endsWith("/")) base = base + "/";
+        window.location.replace(base + "bluecode-web/");
+      })();
     </script>
   </head>
   <body>
     <p>
       Redireccionando…
-      <a href="bluecode-web/">Abrir el sitio</a>
+      <a href="./bluecode-web/">Abrir el sitio</a>
     </p>
   </body>
 </html>

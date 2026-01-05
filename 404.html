@@ -4,10 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Redireccionando…</title>
-    <meta http-equiv="refresh" content="0; url=./" />
     <script>
       // Si alguien cae en una ruta que no existe, volver al home (que redirige a /bluecode-web/)
-      window.location.replace("./");
+      (function () {
+        // En GitHub Pages (project pages), el primer segmento suele ser el nombre del repo.
+        var parts = window.location.pathname.split("/").filter(Boolean);
+        var repo = parts.length > 0 ? parts[0] : "";
+        var target = repo ? "/" + repo + "/" : "/";
+        window.location.replace(target);
+      })();
     </script>
   </head>
   <body>
