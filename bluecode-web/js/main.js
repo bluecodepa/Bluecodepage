@@ -48,8 +48,9 @@
   const planClosers = document.querySelectorAll("[data-close-modal]");
 
   // Configura aquí tus datos reales
-  const WHATSAPP_NUMBER = "0000000000"; // e.g. 5491123456789
-  const TELEGRAM_USERNAME = "bluecode"; // e.g. bluecode
+  const WHATSAPP_NUMBER = "67434769";
+  // Nota: sin "@" (t.me/<username>)
+  const TELEGRAM_USERNAME = "elsato2112";
 
   const plans = {
     ondemand: {
