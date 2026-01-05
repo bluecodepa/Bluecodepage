@@ -19,6 +19,9 @@ Tu sitio listo para subir está en la carpeta `dist/`.
 2. Sube el zip a `public_html/`
 3. En File Manager → clic derecho → **Extract**
 
+> Nota: si subiste un ZIP creado en Windows y ves el sitio pero **no cargan imágenes**, usa el ZIP portable
+> `bluecode-namecheap-portable.zip` (genera rutas internas con `/`), o sube la carpeta `assets/` por FTP.
+
 ### Notas
 - `bluecode-web/contex/` no se incluye en `dist/` (queda fuera del deploy).
 - Si ya tenías otro sitio en `public_html/`, haz backup antes (o renombra la carpeta actual).
