@@ -619,6 +619,13 @@ img{ max-width:100%; height:auto; display:block; }
   .hero__img, .split__img, .cta__img{ margin:0; max-width:520px; }
   .contact__img{ margin:0; max-width:520px; }
   .hero__buttons{ justify-content:flex-start; }
+
+  /* En layouts de 1 columna, centrar visuales para evitar “pegado” a un lado */
+  .split__visual,
+  .cta__visual{
+    display:flex;
+    justify-content:center;
+  }
 }
 @media (max-width: 760px){
   .nav--desktop{ display:none; }
@@ -657,6 +664,9 @@ img{ max-width:100%; height:auto; display:block; }
 
   .modal__panel{ padding:18px; }
   .modal__title{ font-size:22px; }
+
+  /* CTA: fondo decorativo menos agresivo en pantallas chicas (evita recortes raros) */
+  .section--cta::before{ inset:-160px -60px; }
 }
 
 @media (max-width: 480px){
